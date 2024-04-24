@@ -1,0 +1,38 @@
+Operating on: 10 - Optimism
+
+Config - REWARD_RECIPIENT not provided, setting swap recipient to relayer address: 0x07C5917860695a351De0BF7C200367619B5ffb68
+Config - MIN_PROFIT_THRESHOLD_USD: 0.05
+
+Starting ...
+Getting prize pool info ...
+Getting prize context ...
+
+******************
+1. Prize token: WETH
+
+┌────────────┬──────────────────────────────────────────────┬──────────┬─────────────────┬────────┬──────────────┐
+│ (index)    │ address                                      │ decimals │ name            │ symbol │ assetRateUsd │
+├────────────┼──────────────────────────────────────────────┼──────────┼─────────────────┼────────┼──────────────┤
+│ prizeToken │ '0x4200000000000000000000000000000000000006' │ 18       │ 'Wrapped Ether' │ 'WETH' │ 3133.6667    │
+└────────────┴──────────────────────────────────────────────┴──────────┴─────────────────┴────────┴──────────────┘
+┌─────────┬──────────┬───────────────────────────────┐
+│ (index) │ numTiers │ tiersRangeArray               │
+├─────────┼──────────┼───────────────────────────────┤
+│ tiers   │ 6        │ [ 0, 1, 2, ... 3 more items ] │
+└─────────┴──────────┴───────────────────────────────┘
+Draw ID: 5
+Prize Token WETH MarketRate USD:  $3133.6667
+
+******************
+Getting prize vaults ...
+Found 16 prize vaults.
+
+
+Could not find winners for prize vault: 0x9b53ef6f13077727d22cb4acad1119c79a97be17 (results not yet computed for new draw with id #5?)
+https://raw.githubusercontent.com/GenerationSoftware/pt-v5-winners-mainnet/main/winners/vaultAccounts/10/0xf35fe10ffd0a9672d0095c435fd8767a7fe29b55/draw/5/0x9b53ef6f13077727d22cb4acad1119c79a97be17.json
+
+Error: Not Found
+    at fetchClaims (/home/runner/work/pt-v5-prize-claimer-gh-action-bot/pt-v5-prize-claimer-gh-action-bot/node_modules/@generationsoftware/pt-v5-autotasks-library/src/prizeClaimer.ts:784:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runPrizeClaimer (/home/runner/work/pt-v5-prize-claimer-gh-action-bot/pt-v5-prize-claimer-gh-action-bot/node_modules/@generationsoftware/pt-v5-autotasks-library/src/prizeClaimer.ts:139:25)
+    at main (/home/runner/work/pt-v5-prize-claimer-gh-action-bot/pt-v5-prize-claimer-gh-action-bot/index.ts:35:5)
